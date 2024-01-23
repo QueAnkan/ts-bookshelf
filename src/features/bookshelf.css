@@ -1,0 +1,53 @@
+.books-list{
+display: flex;
+flex-wrap: wrap;
+}
+
+.books-list li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 9rem;
+	height: 12rem;
+	border: 0.3em solid brown;
+	border-left: 1em;
+	border-left-style: groove;
+	border-left-color: brown;
+	border-radius: 0 5px 5px 0;
+	list-style: none;
+	padding: 1rem;
+	margin: 1rem;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0  0.5rem 0.5rem black;
+	background-color: rgb(220, 159, 94);
+}
+
+.books-list li h4{
+	font-family: 'Dancing Script', cursive;
+	font-size: 16px;
+}
+
+.add-new-book-form{
+	margin-top: 4rem;
+	border: 1px groove silver;
+	padding: 2rem;
+}
+
+.add-new-book-form h3{
+	color:silver;
+}
+
+.add-new-book-form > div{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	color: rgb(238, 254, 220);
+
+}
+
+.add-new-book-form > div input {
+	border-radius: 5px;
+	height: 1.5em;
+}
