@@ -8,13 +8,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <body>
+    <div>
       <Header/>
       <main>
         <Bookshelf/>
       <AddNewBook/>
       </main>
-     </body>
+     </div>
   )
 }
 
