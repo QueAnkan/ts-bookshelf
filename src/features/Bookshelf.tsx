@@ -1,12 +1,23 @@
 
-import { Book, books } from "../data/books"
+import { Book} from "../data/books"
 import './bookshelf.css' 
 import { useRecoilState } from "recoil"
 import { bookAtom } from "../data/atom"
+import { useEffect } from "react"
 
 const Bookshelf = () => {
 
 	const [ myBooks, setMyBooks] = useRecoilState<Book[]>(bookAtom)
+	
+	 useEffect(() => {
+		const mySavedBooks = localStorage.getItem('mySavedBooks');
+		if (mySavedBooks) {
+			setMyBooks(JSON.parse(mySavedBooks))
+		}
+	 }, [])
+	
+
+	
 	console.log("loggar bookshelf1", myBooks);
 	return(
 		<div>			
